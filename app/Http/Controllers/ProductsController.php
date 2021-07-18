@@ -39,7 +39,8 @@ class ProductsController extends Controller
             'description'=>$productarticle->description,
             'short_description'=>$productarticle->short_description,
             'picture_link'=>$productarticle->picture_link,
-            'price'=>$product->price]);
+            'price'=>$product->price,
+            'category_id'=>$product->category_id]);
         return response()->json($data);
     }
 }
