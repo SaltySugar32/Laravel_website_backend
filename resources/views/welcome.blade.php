@@ -21,7 +21,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <p>Здрасьте, с подключениемм</p>
+        <p>Здрасьте, с подключением</p>
     </body>
 </html>
 
