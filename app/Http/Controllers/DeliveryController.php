@@ -34,7 +34,7 @@ class DeliveryController extends Controller
                         'street' => $deliveryaddress->street,
                         'building' => $deliveryaddress->building]);
                 }
-                return $data != [] ? response()->json($data) : response()->json(null);
+                return $data != [] ? response()->json($data) : null;
             }
             return response(null, 401);
         }
@@ -71,7 +71,7 @@ class DeliveryController extends Controller
                         ]);
                     }
                 }
-                return $data != [] ? response()->json($data) : response()->json(null);
+                return $data != [] ? response()->json($data) : null;
             }
             return response(null, 401);
         }

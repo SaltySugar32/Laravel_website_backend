@@ -35,9 +35,9 @@ class CartController extends Controller
                             'purchase_amount' => $check->purchase_amount,
                             'price' => $price]);
                     }
-                    return $data!=[]? response()->json($data):response()->json(null);
+                    return $data!=[]? response()->json($data):null;
                 }
-                return response()->json(null);
+                return null;
             }
             return response(null, 401);
         }
